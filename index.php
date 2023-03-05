@@ -12,23 +12,8 @@
 </head>
 
 <body>
-  <header class="  lh-1 ">
-    <div class=" row flex-nowrap bg-warning border-white justify-content-between align-items-center">
-
-      <div class="  col-4 text-center">
-        <img src="./img/favicon.ico" class=" w-25 h-25 " alt="logo">
-        <a class="blog-header-logo h1 text-decoration-none text-dark" href="index.php">IT Blog</a>
-      </div>
-      <div class="col-4 d-flex justify-content-end align-items-center">
-        <a class="link-secondary" href="#" aria-label="Search">
-        </a> <a class="btn btn-lg  border-dark text-dark m-2 btn-outline-dark" href="#">Войти</a>
-        <a class="btn  btn-lg m-2 border-dark text-dark btn-outline-dark" href="#"> Регистрация</a>
-      </div>
-    </div>
-    <hr>
-  </header>
-
-  <div class="container m-auto row g-5">
+ <?php require './blocks/header.php'?>
+  <main class="container m-auto row g-5">
     <div class="col-md-8">
       <h3 class="pb-4 mb-4 fst-italic border-bottom">
         Основной контент
@@ -95,41 +80,11 @@
           <p>This is some additional paragraph placeholder content. It's a slightly shorter version of the other highly repetitive body text used throughout.</p>
         </article>
       </article>
-
-
-      <nav class="blog-pagination" aria-label="Pagination">
-        <a class="btn btn-outline-primary rounded-pill" href="#">Older</a>
-        <a class="btn btn-outline-secondary rounded-pill disabled">Newer</a>
-      </nav>
-
     </div>
-
-    <div class="col-md-4">
-      <div class="position-sticky" style="top: 2rem;">
-        <div class="p-4 mb-3 bg-light rounded">
-          <h4 class="fst-italic">About</h4>
-          <p class="mb-0"> Этот блог сделан с целью закрепления знаний по языку php.</p>
-        </div>
-
-        <div class="p-4">
-          <h4 class="fst-italic">Обратная связь</h4>
-          <ol class="list-unstyled">
-            <li><a href="https://github.com/AnisimovStas">GitHub</a></li>
-            <li><a href="https://telegram.me/otpbard">Telegram</a></li>
-            <li><a href="http://xn--80a.xyz/">Portfolio Website</a></li>
-          </ol>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-
-  <footer class="footer d-flex justify-content-center text-center  bg-warning  mt-5 align-items-center py-3 border-top">
-
-    <p class="h2"> © 2023 Feralbot, Inc</p>
-  </footer>
+    <?php require './blocks/aside.php'?>
+   
+  </main>
+  <?php require './blocks/footer.php'?>
 </body>
 
 </html>
