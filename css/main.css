@@ -3,6 +3,17 @@
   bottom: 0;
   width: 100%;
 }
-body::-webkit-scrollbar{
-    display: none;
-  }
+.error {
+  height: 100vh;
+}
+.error_text {
+  margin: 10px;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.absolute {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

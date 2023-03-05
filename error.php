@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php require './blocks/headData.php' ?>
     <title>404 error</title>
+
 </head>
 
 <body>
-    <a> Ошибка 404, перейдите на главную. </a>
+    <?php require './blocks/header.php' ?>
+    <div id="content">
+        <h1 class="h1 error_text"> Ошибка 404, перейдите <a href="/" rel="noopener noreferrer"> на главную.</a> </h1>
+    </div>
+    <?php require './blocks/footer.php' ?>
 </body>
 
 </html>

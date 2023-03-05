@@ -2,3 +2,5 @@ serverSignature Off
 AddDefaultCharset UTF-8
 
 ErrorDocument 404 /error.php
+
+# RewriteRule ^reg?$ reg.php [NC, L]
