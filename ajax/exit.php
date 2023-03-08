@@ -1,4 +1,5 @@
  <?php
-    setcookie('loginCookie', $login, time() - 3600 * 24 * 30, '/');
-echo true;
+    setcookie('loginCookie', '', time() - 3600 * 24 * 30, '/');
+    unset($_COOKIE['loginCookie']);
+    echo true;
     ?>

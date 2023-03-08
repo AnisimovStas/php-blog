@@ -2,19 +2,30 @@
 <html lang="ru">
 
 <head>
- <?php require './blocks/headData.php' ?>
-    <title>PHP blog</title>
+  <?php require './blocks/headData.php' ?>
+  <title>PHP blog</title>
 
 </head>
 
 <body>
- <?php require './blocks/header.php'?>
+  <?php require './blocks/header.php' ?>
   <main id="content" class="container m-auto row g-5">
     <div class="col-md-8">
       <h3 class="pb-4 mb-4 fst-italic border-bottom">
         Основной контент
       </h3>
+      <?php
+      require_once('mysql_connect.php');
+      $sql = "SELECT * FROM articles ORDER BY date DESC";
+      $query = $pdo->query($sql);
+      while ($row = $query->fetch(PDO::FETCH_OBJ)) {
+        echo "<h2>$row->title</h2> <p>$row->intro</p>
+      <p><b>Aвтор статьи: </b> <mark>$row->author</mark></p> 
+      <button class='btn btn-warning mb-5'>Прочитать больше</button>";
+      }
 
+
+      ?>
       <article class="blog-post">
         <h2 class="blog-post-title mb-1">Статья №1 </h2>
         <p class="blog-post-meta">January 1, 2021 by <a href="#">Mark</a></p>
@@ -77,10 +88,9 @@
         </article>
       </article>
     </div>
-    <?php require './blocks/aside.php'?>
-   
+    <?php require './blocks/aside.php' ?>
   </main>
-  <?php require './blocks/footer.php'?>
+  <?php require './blocks/footer.php' ?>
 </body>
 
 </html>
