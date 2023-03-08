@@ -22,14 +22,10 @@
                 <label for="floatingPassword">Пароль</label>
             </div>
 
-            <div class="checkbox mb-3">
-                <label>
-                    <input type="checkbox" value="remember-me"> Запомнить меня?
-                </label>
-            </div>
+
             <button class="w-100 btn btn-lg btn-warning" type="submit">Войти</button>
         </form>
-</main>
+    </main>
     <div class="absolute">
         <?php require './blocks/footer.php' ?> </div>
 </body>

@@ -17,3 +17,7 @@ body::-webkit-scrollbar {
   bottom: 0;
   width: 100%;
 }
+.testing {
+  display: none;
+}
+
