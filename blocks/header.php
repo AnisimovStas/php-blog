@@ -7,6 +7,7 @@
         </div>
 
         <div class="col-4 d-flex justify-content-end align-items-center">
+        </a> <a class="btn btn-lg  border-dark text-dark m-2 btn-outline-dark" href="contacts.php">Контакты</a>
             <?php if ($_COOKIE['loginCookie'] == 0) : ?>
                 </a> <a class="btn btn-lg  border-dark text-dark m-2 btn-outline-dark" href="login.php">Войти</a>
                 <a class="btn  btn-lg m-2 border-dark text-dark btn-outline-dark" href="reg.php"> Регистрация</a>
