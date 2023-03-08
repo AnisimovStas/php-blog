@@ -30,7 +30,7 @@
                 <input type="password" class="form-control" name="password" id="password" placeholder="Введите пароль">
                 <label for="password">Пароль</label>
             </div>
-            <div class="alert alert-danger testing" id="alert"> s</div>
+            <div class="alert alert-danger testing" id="alert"> </div>
             <button class="w-100 btn btn-lg btn-warning" id="regUser" type="button">Зарегистироваться</button>
         </form>
     </main>
@@ -44,7 +44,7 @@
             let email = $('#email').val();
             let password = $('#password').val();
             $.ajax({
-                url: 'reg/reg.php',
+                url: 'ajax/reg.php',
                 type: 'POST',
                 cache: false,
                 data: {
